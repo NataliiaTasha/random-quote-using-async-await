@@ -1,7 +1,7 @@
 body {
     // background: rgb(33,51,61);
     background: radial-gradient(circle at top center, rgba(33,51,61,1) 0%, rgba(10,22,28,1) 100%);
-    background-size: cover;
+    // background-size: cover;
     margin: 0; 
 }
 
@@ -82,7 +82,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    // background-color: antiquewhite;
+    
     z-index: -1;
 }
 
@@ -91,8 +91,8 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1px;
-    height: 1px;
+    width: 1.5px;
+    height: 1.5px;
     background: antiquewhite;
     animation: twinkle 3s linear infinite;
     box-shadow: 200px 100px antiquewhite, 800px 400px antiquewhite, 800px 100px antiquewhite, 600px 500px antiquewhite, 500px 250px antiquewhite, 700px 300px antiquewhite, 900px 400px antiquewhite, 450px 500px antiquewhite, 1200px 600px antiquewhite, 1020px 350px antiquewhite, 1100px 550px antiquewhite; 
@@ -101,5 +101,32 @@ p {
 @keyframes twinkle {
     0% {opacity: 0;}
     50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.stars2 {
+    position: fixed;
+    top: 50px;
+    left: 100px;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+
+    &::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.7px;
+        height: 1.7px;
+        background: antiquewhite;
+        animation: twinkle2 3.5s linear infinite;
+        box-shadow: 200px 100px antiquewhite, 800px 400px antiquewhite, 800px 100px antiquewhite, 600px 500px antiquewhite, 500px 250px antiquewhite, 700px 300px antiquewhite, 900px 400px antiquewhite, 450px 500px antiquewhite, 1200px 600px antiquewhite, 1020px 350px antiquewhite, 1100px 550px antiquewhite; 
+    }
+}
+
+@keyframes twinkle2 {
+    0% {opacity: 0;}
+    45% {opacity: 1;}
     100% {opacity: 0;}
 }

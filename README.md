@@ -5,6 +5,7 @@ Training solo project with the following learning objectives:
 * DOM manipulation according to the result of the request
 * HTML semantics (blockquote)
 
+Project page: [Unleashing random wisdom](https://nataliiatasha.github.io/random-quote-using-async-await/)
+
 ![Screenshot](/assets/css/Screenshot.png)
 
-[Unleashing random wisdom](https://nataliiatasha.github.io/random-quote-using-async-await/)
